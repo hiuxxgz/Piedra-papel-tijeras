@@ -4,7 +4,7 @@ def juego():
     puntos_persona=0
     puntos_ordenador=0
     while puntos_persona<3 and puntos_ordenador<3:
-        print(puntos_persona,"-",puntos_ordenador)
+        print("Jugador",puntos_persona,"-",puntos_ordenador,"Ordenador")
         persona=input("Elige una de estas tres opciones:piedra,papel,tijeras\n")
        
         if persona not in opciones:
