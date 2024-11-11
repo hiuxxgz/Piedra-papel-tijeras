@@ -29,7 +29,6 @@ def juego():
         else:
             puntos_ordenador+=1
             print("Perdiste,la próxima vez será,")
-
     if puntos_persona==3:
         print("Pero bueno, dicen que lo importante es participar")
     else:
