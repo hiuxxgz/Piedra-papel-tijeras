@@ -1,6 +1,6 @@
 import random
-opciones=("piedra","papel","tijeras")
-def bienvenida():
+opciones=("piedra","papel","tijeras",)
+def explicación():
     print("Vamos a jugar un piedra papel y tijeras, preparate!!")
     print("Es una partida a tres puntos el primero que llegue gana ")
 
@@ -8,7 +8,7 @@ def puntuación(puntos_persona,puntos_ordenador):
     print("Jugador",puntos_persona,"-",puntos_ordenador,"Ordenador")
     
 def juego():
-    bienvenida()
+    explicación()
     puntos_persona=0
     puntos_ordenador=0
     while puntos_persona<3 and puntos_ordenador<3:
@@ -34,6 +34,15 @@ def juego():
     else:
         print("Mientras experimenta el sabor de la derrota JA JA JA")
 juego() 
+def revancha():
+    revancha=input("Quieres jugar otra partida s/n\n")
+    while revancha=="s":
+        juego()
+        revancha=input("Quieres jugar otra partida s/n\n")
+        if revancha=="n":
+            print("Gracias por jugar")
+            break
+revancha()      
 
 
 
